@@ -88,15 +88,15 @@ Na passagem de parâmetros para uma função é criado um objeto *argumentos* se
 
 Variáveis globais se passadas como argumentos da função vão se comportar como variáveis locais onde as alterações locais só persistem no escopo da função.
 
-`
-var a = 10;
+
+"var a = 10;
 var b = function(x) {
     x = 30; 
     console.log(x,a);
 }
 
-b(a); // 30 10
-`
+b(a); // 30 10"
+
  
 ## IIFE
 Immediately-invoked function expressions (IIFE) são usadas para evitar hoisting das variáveis dentro de um bloco de código, evitando a poluição do ambiente global de variáveis e simultaneamente permitindo acesso público à métodos enquanto mantém a privacidade de variáveis definidas dentro da função.
