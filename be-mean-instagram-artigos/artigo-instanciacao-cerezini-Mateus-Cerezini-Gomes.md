@@ -6,16 +6,17 @@ Neste artigo vamos abordar alguns temas importantes sobre a instanciação de va
 ## Hoisting
 Em Javascript as variáveis são processadas antes de qualquer código na função, logo independe o local do *source code* ou função em que elas estão declaradas. Isso possibilita que variáveis sejam usadas antes de terem sido declaradas. Este comportamento é chamado de "hoisting", a variável é movida para o início da função ou do código global.
 
+```
+a = 2;
+console.log(a); // 2
+var a;
 
->"a = 2;
->console.log(a); // 2
->var a;
->
->// é implicitamente entendido como:
->
->var a;
->a = 2;
->console.log(a); // 2" 
+// é implicitamente entendido como:
+
+var a;
+a = 2;
+console.log(a); // 2 
+```
 
 Por essa razão, recomenda-se sempre declarar variáveis na parte superior do seu escopo de aplicação (o topo do código global e a parte superior do código da função). Deixando claro na leitura do código que aquelas variáveis pertencem ao escopo local.
 
