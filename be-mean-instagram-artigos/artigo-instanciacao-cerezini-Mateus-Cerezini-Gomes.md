@@ -136,7 +136,7 @@ Entender que a linguagem JavaScript usa o escopo de função em vez do escopo de
 
 ## Referências bibliográficas
 
-*[MDN Variáveis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-*[MDN Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
-*[IIFE](https://nandovieira.com.br/design-patterns-no-javascript-singleton)
-*[IIFE Wikipedia](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
+* [MDN Variáveis](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+* [MDN Closure](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+* [IIFE](https://nandovieira.com.br/design-patterns-no-javascript-singleton)
+* [IIFE Wikipedia](https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
