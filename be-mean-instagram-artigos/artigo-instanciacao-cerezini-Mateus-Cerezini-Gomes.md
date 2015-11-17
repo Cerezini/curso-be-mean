@@ -6,7 +6,7 @@ Neste artigo vamos abordar alguns temas importantes sobre a instanciação de va
 ## Hoisting
 Em Javascript as variáveis são processadas antes de qualquer código na função, logo independe o local do *source code* ou função em que elas estão declaradas. Isso possibilita que variáveis sejam usadas antes de terem sido declaradas. Este comportamento é chamado de "hoisting", a variável é movida para o início da função ou do código global.
 
-```
+`
 a = 2;
 console.log(a); // 2
 var a;
@@ -16,7 +16,7 @@ var a;
 var a;
 a = 2;
 console.log(a); // 2 
-```
+`
 
 Por essa razão, recomenda-se sempre declarar variáveis na parte superior do seu escopo de aplicação (o topo do código global e a parte superior do código da função). Deixando claro na leitura do código que aquelas variáveis pertencem ao escopo local.
 
@@ -88,15 +88,15 @@ Na passagem de parâmetros para uma função é criado um objeto *argumentos* se
 
 Variáveis globais se passadas como argumentos da função vão se comportar como variáveis locais onde as alterações locais só persistem no escopo da função.
 
-
-"var a = 10;
+```
+var a = 10;
 var b = function(x) {
     x = 30; 
     console.log(x,a);
 }
 
-b(a); // 30 10"
-
+b(a); // 30 10
+```
  
 ## IIFE
 Immediately-invoked function expressions (IIFE) são usadas para evitar hoisting das variáveis dentro de um bloco de código, evitando a poluição do ambiente global de variáveis e simultaneamente permitindo acesso público à métodos enquanto mantém a privacidade de variáveis definidas dentro da função.
